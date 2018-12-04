@@ -1,0 +1,29 @@
+body {
+    margin: 2rem;
+}
+
+.header {
+    text-transform: uppercase;
+    color: white;
+
+    &__heading {
+        @include centre;
+        top: 40%;
+        text-align: center;
+
+        &--main {
+            display: inline-block;
+            font-size: 6.5rem;
+            width: 100%;
+            letter-spacing: .4rem;
+        }
+
+        &--sub {
+            display: inline-block;
+            font-size: 3.5rem;
+            width: 100%;
+            letter-spacing: .4remn;
+        }
+
+    }
+}

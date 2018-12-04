@@ -1,0 +1,21 @@
+//Abstract
+@import "abstract/functions.scss";
+@import "abstract/mixins.scss";
+@import "abstract/variables.scss";
+
+//Base
+@import "base/animations.scss";
+@import "base/base.scss";
+@import "base/typography.scss";
+@import "base/utilities.scss";
+
+
+//Components
+
+
+//layouts
+@import "layouts/grid.scss";
+@import "layouts/header.scss";
+
+//Pages
+@import "pages/homepage.scss";
