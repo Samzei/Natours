@@ -1,0 +1,15 @@
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+    &--white {
+        color: $nature;
+        background-color: $milk;
+        border-radius: 5rem;
+        padding: 2rem 5rem;
+        font-size: 2rem;
+        margin: 0 auto;
+        margin-top: 10rem;
+    }
+}
