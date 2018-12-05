@@ -4,12 +4,14 @@
     font-size: 1.2rem;
 
     &--white {
+        animation: moveinbottom .5 ease-in;  
         color: $nature;
         background-color: $milk;
         border-radius: 5rem;
-        padding: 2rem 5rem;
-        font-size: 2rem;
+        padding: 2rem 3rem;
+        font-size: 1.6rem;
         margin: 0 auto;
-        margin-top: 10rem;
+        @include centre;
+        top: 150%;
     }
 }
