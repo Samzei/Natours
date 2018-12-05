@@ -13,7 +13,7 @@ body {
         text-align: center;
 
         &--main {
-            animation: moveinleft .5 ease-in;
+            animation: moveinleft .6s ease-in-out .30s backwards;
             display: inline-block;
             font-size: 8rem;
             width: 100%;
@@ -21,7 +21,7 @@ body {
         }
 
         &--sub {
-            animation: moveinright .5 ease-in;
+            animation: moveinright .6s ease-in-out .50s backwards;
             display: inline-block;
             font-size: 3.5rem;
             width: 100%;

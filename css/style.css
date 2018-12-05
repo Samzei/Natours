@@ -41,13 +41,13 @@ body {
     top: 40%;
     text-align: center; }
     .header__heading--main {
-      animation: moveinleft .5 ease-in;
+      animation: moveinleft .6s ease-in-out .30s backwards;
       display: inline-block;
       font-size: 8rem;
       width: 100%;
       letter-spacing: .4rem; }
     .header__heading--sub {
-      animation: moveinright .5 ease-in;
+      animation: moveinright .6s ease-in-out .50s backwards;
       display: inline-block;
       font-size: 3.5rem;
       width: 100%;
@@ -69,23 +69,74 @@ body {
 .u-margin-top-big {
   margin-bottom: 8rem !important; }
 
-.btn {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.2rem; }
-  .btn--white {
-    animation: moveinbottom .5 ease-in;
-    color: #55c57a;
-    background-color: #fff;
-    border-radius: 5rem;
-    padding: 2rem 3rem;
-    font-size: 1.6rem;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 150%; }
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer; }
+
+.btn:hover, .btn:focus {
+  outline: none;
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(34, 17, 34, 0.2); }
+  .btn:hover::after, .btn:focus::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(34, 17, 34, 0.2); }
+
+.btn--white {
+  background-color: #fff;
+  color: #777;
+  margin-top: 3rem; }
+  .btn--white::after {
+    background-color: #fff; }
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0; }
+
+.btn--animated {
+  animation: moveinbottom .5s ease-out .75s backwards; }
+
+.btn-text:link, .btn-text:visited {
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: .3rem;
+  font-size: 1.6rem;
+  transition: all .2s; }
+
+.btn-text:hover {
+  background-color: #55c57a;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(34, 17, 34, 0.15);
+  transform: translateY(-2px); }
+
+.btn-text:active {
+  box-shadow: 0 0.5rem 1rem rgba(34, 17, 34, 0.15);
+  transform: translateY(0); }
 
 .row {
   max-width: 114rem;
