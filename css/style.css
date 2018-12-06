@@ -28,10 +28,20 @@
 
 .tours {
   font-size: 1.6rem;
-  margin-top: -12rem;
-  padding-top: 25rem;
-  background-color: #f7f7f7;
-  box-sizing: border-box; }
+  margin-top: -15rem;
+  margin-bottom: -12rem;
+  padding-top: 16rem;
+  padding-bottom: 30rem;
+  background-color: #f7f7f7; }
+
+.explore {
+  height: 100%;
+  width: auto;
+  font-size: 1.6rem;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../../img/nat-4.jpg);
+  background-size: cover;
+  padding-top: 15rem;
+  transform: skewY(-8deg); }
 
 body {
   margin: 3rem; }
@@ -250,6 +260,33 @@ body {
       z-index: 5; }
     .tours__pic--img3:hover .tours__pic--img3__pic:not(:hover) {
       transform: scale(0.95); }
+
+.explore-box {
+  height: 30rem;
+  font-size: 1.8rem;
+  background-color: rgba(247, 247, 247, 0.7);
+  border-radius: .5rem;
+  color: #777;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  line-height: 2rem;
+  box-sizing: border-box;
+  transition: all .2s; }
+  .explore-box__icon {
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 6rem;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; }
+  .explore-box:hover {
+    box-shadow: 0 1rem 0.5rem rgba(34, 17, 34, 0.3);
+    transform: translateY(-1rem); }
+
+.explore-row {
+  transform: skewY(8deg); }
 
 .row {
   max-width: 114rem;

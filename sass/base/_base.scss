@@ -1,7 +1,19 @@
 .tours {
-    font-size: 1.6rem;
-    margin-top: -12rem;
-    padding-top: 25rem;
+    font-size: $primefont;
+    margin-top: -15rem;
+    margin-bottom: -12rem;
+    padding-top: 16rem;
+    padding-bottom: 30rem;
     background-color: $ash;
-    box-sizing: border-box;
+}
+
+.explore {
+    height: 100%;
+    width: auto;
+    font-size: $primefont;
+    background-image: linear-gradient(to right bottom, rgba($lightnature, .8), rgba($ultranature, .8)), url(../../img/nat-4.jpg);
+    background-size: cover;
+    padding-top: 15rem;
+
+    transform: skewY(-8deg);
 }
