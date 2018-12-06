@@ -86,7 +86,7 @@ body {
   transition: all .2s;
   cursor: default; }
   .heading-secondary:hover {
-    transform: skewX(-15deg);
+    transform: skewX(10deg) skewY(2deg);
     text-shadow: 0 2rem 3rem rgba(34, 17, 34, 0.5); }
 
 .heading-tertiary {
@@ -115,7 +115,6 @@ body {
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;
-  border-radius: 10rem;
   transition: all .2s;
   position: relative;
   font-size: 1.6rem;
@@ -137,9 +136,24 @@ body {
 .btn--white {
   background-color: #fff;
   color: #777;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  border-radius: 10rem; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--green {
+  color: #55c57a;
+  text-decoration: underline; }
+  .btn--green:hover, .btn--green:focus {
+    background-color: #55c57a;
+    color: #fff;
+    outline: none;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(34, 17, 34, 0.2); }
+  .btn--greenactive {
+    outline: none;
+    transform: translate(0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(34, 17, 34, 0.2); }
 
 .btn::after {
   content: "";
@@ -193,20 +207,59 @@ body {
   line-height: 2rem;
   color: #777; }
 
-.tours__pic--img1 {
-  height: 20rem;
-  position: absolute;
-  transform: translate(0, 0); }
-
-.tours__pic--img2 {
-  height: 20rem;
-  position: absolute;
-  transform: translate(70%, 20%); }
-
-.tours__pic--img3 {
-  height: 20rem;
-  position: absolute;
-  transform: translate(30%, 50%); }
+.tours__pic {
+  position: relative; }
+  .tours__pic--img1 {
+    box-shadow: 0 1.5rem 4rem rgba(34, 17, 34, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    width: 55%;
+    left: 0;
+    top: -2rem;
+    z-index: 2;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .tours__pic--img1:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5 4rem rgba(34, 17, 34, 0.5);
+      z-index: 5; }
+    .tours__pic--img1:hover .tours__pic--img1__pic:not(:hover) {
+      transform: scale(0.95); }
+  .tours__pic--img2 {
+    box-shadow: 0 1.5rem 4rem rgba(34, 17, 34, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    width: 55%;
+    right: 0;
+    top: 2rem;
+    z-index: 2;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .tours__pic--img2:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5 4rem rgba(34, 17, 34, 0.5);
+      z-index: 5; }
+    .tours__pic--img2:hover .tours__pic--img2__pic:not(:hover) {
+      transform: scale(0.95); }
+  .tours__pic--img3 {
+    box-shadow: 0 1.5rem 4rem rgba(34, 17, 34, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    width: 55%;
+    left: 20%;
+    top: 10rem;
+    z-index: 2;
+    transition: all .2s;
+    outline-offset: 2rem; }
+    .tours__pic--img3:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5 4rem rgba(34, 17, 34, 0.5);
+      z-index: 5; }
+    .tours__pic--img3:hover .tours__pic--img3__pic:not(:hover) {
+      transform: scale(0.95); }
 
 .explore-box {
   height: 30rem;

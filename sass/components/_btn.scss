@@ -6,7 +6,6 @@
         text-decoration: none;
         padding: 1.5rem 4rem;
         display: inline-block;
-        border-radius: 10rem;
         transition: all .2s;
         position: relative;
         font-size: $primefont;
@@ -37,10 +36,31 @@
         background-color: $milk;
         color: $twilight;
         margin-top: 3rem;
+        border-radius: 10rem;
 
         &::after {
                 background-color: $milk;
             }
+    }
+
+    &--green {
+        color: $nature;
+        text-decoration: underline;
+
+        &:hover,
+        &:focus {
+            background-color: $nature;
+            color: $milk;
+            outline: none;
+            transform: translateY(-0.3rem);
+            box-shadow: 0 1rem 2rem rgba($dark, .2);
+        }
+
+        &active {
+            outline: none;
+            transform: translate(0.1rem);
+            box-shadow: 0 .5rem 1rem rgba($dark, .2);
+        }
     }
 
     &::after{
