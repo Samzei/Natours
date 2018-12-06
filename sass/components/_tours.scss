@@ -1,0 +1,37 @@
+.tours {
+    &__p1 {
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: .2rem;
+        line-height: 2rem;
+        color: $twilight;
+    }
+    
+    &__p2 {
+        margin-bottom: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: .2rem;
+        line-height: 2rem;
+        color: $twilight;
+    }
+
+    &__pic {
+        &--img1 {
+            height: 20rem;
+            position: absolute; 
+            transform: translate(0, 0);
+        }
+    
+        &--img2 {
+            height: 20rem;
+            position: absolute;
+            transform: translate(70%, 20%);
+        }
+    
+        &--img3 {
+            height: 20rem;
+            position: absolute;
+            transform: translate(30%, 50%);
+        }
+    }
+}

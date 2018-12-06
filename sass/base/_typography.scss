@@ -1,5 +1,5 @@
 body {
-    margin: 2rem;
+    margin: 3rem;
 }
 
 .header {
@@ -15,19 +15,47 @@ body {
         &--main {
             animation: moveinleft .6s ease-in-out .30s backwards;
             display: inline-block;
-            font-size: 8rem;
+            font-size: 5.8rem;
             width: 100%;
             letter-spacing: .4rem;
+            font-weight: 400;
         }
 
         &--sub {
             animation: moveinright .6s ease-in-out .50s backwards;
             display: inline-block;
-            font-size: 3.5rem;
+            margin-top: 3rem;
+            font-size: 2.2rem;
             width: 100%;
-            letter-spacing: .3rem;
-            font-weight: 100;
+            letter-spacing: 1.6rem;
+            font-weight: 400;
         }
 
     }
+}
+
+.heading-secondary {
+    display: inline-block;
+    font-size: 3.5rem;
+    background-image: linear-gradient(to right, $lightnature, $ultranature);
+    text-transform: uppercase;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    transition: all .2s;
+    cursor: default;
+    
+    &:hover {
+        transform: skewX(-15deg);
+        text-shadow: 0 2rem 3rem rgba($dark, .5);
+    }
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    color: $twilight;
+    font-weight: 100;
+    text-transform: uppercase;
 }
