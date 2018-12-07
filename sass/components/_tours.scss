@@ -3,7 +3,6 @@
         margin-bottom: 2rem;
         font-size: 1.8rem;
         letter-spacing: .2rem;
-        line-height: 2rem;
         color: $twilight;
     }
     
@@ -11,27 +10,72 @@
         margin-bottom: 2rem;
         font-size: 1.8rem;
         letter-spacing: .2rem;
-        line-height: 2rem;
         color: $twilight;
     }
 
     &__pic {
+        position: relative;
+
         &--img1 {
-            height: 20rem;
-            position: absolute; 
-            transform: translate(0, 0);
+            width: 55%;
+            box-shadow: 0 1.5rem 4rem rgba($dark, .4);
+            border-radius: 2px;
+            position: absolute;
+            z-index: 2;
+            transition: all .2s;
+            outline-offset: 2rem;
+            left: 0;
+            top: -2rem;
+
+            &:hover {
+                outline: 1.5rem solid $nature;
+                transform: scale(1.05) translateY(-.5rem);
+                box-shadow: 0 2.5 4rem rgba($dark, .5);
+                z-index: 5;
+            }
         }
-    
+
         &--img2 {
-            height: 20rem;
+            width: 55%;
+            box-shadow: 0 1.5rem 4rem rgba($dark, .4);
+            border-radius: 2px;
             position: absolute;
-            transform: translate(70%, 20%);
+            z-index: 2;
+            transition: all .2s;
+            outline-offset: 2rem;
+            right: 0;
+            top: 2rem;
+
+            &:hover {
+                outline: 1.5rem solid $nature;
+                transform: scale(1.05) translateY(-.5rem);
+                box-shadow: 0 2.5 4rem rgba($dark, .5);
+                z-index: 5;
+            }
         }
-    
+
         &--img3 {
-            height: 20rem;
+            width: 55%;
+            box-shadow: 0 1.5rem 4rem rgba($dark, .4);
+            border-radius: 2px;
             position: absolute;
-            transform: translate(30%, 50%);
+            z-index: 2;
+            transition: all .2s;
+            outline-offset: 2rem;
+            left: 20%;
+            top: 10rem;
+
+            &:hover {
+                outline: 1.5rem solid $nature;
+                transform: scale(1.05) translateY(-.5rem);
+                box-shadow: 0 2.5 4rem rgba($dark, .5);
+                z-index: 5;
+            }
+
         }
+
     }
+     &:hover &__pic:not(:hover) {
+            transform: scale(.95)
+        }
 }

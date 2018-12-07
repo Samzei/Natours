@@ -28,7 +28,7 @@
 
 .tours {
   font-size: 1.6rem;
-  margin-top: -15rem;
+  margin-top: -13rem;
   margin-bottom: -12rem;
   padding-top: 16rem;
   padding-bottom: 30rem;
@@ -42,14 +42,25 @@
   background-size: cover;
   padding-top: 15rem;
   transform: skewY(-8deg); }
+  .explore::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.booking {
+  margin-top: 20rem;
+  font-size: 1.8rem; }
 
 body {
-  margin: 3rem; }
+  line-height: 1.7rem;
+  font-family: 'lato', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #777; }
 
 .header {
-  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  color: white; }
+  color: #fff; }
   .header__heading {
     position: absolute;
     top: 50%;
@@ -74,6 +85,7 @@ body {
       font-weight: 400; }
 
 .heading-secondary {
+  height: auto;
   display: inline-block;
   font-size: 3.5rem;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
@@ -105,10 +117,11 @@ body {
   margin-bottom: 6rem !important; }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem !important; }
+  margin-bottom: 8rem !important;
+  height: auto; }
 
 .u-margin-top-big {
-  margin-bottom: 8rem !important; }
+  margin-top: 8rem !important; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -183,30 +196,64 @@ body {
   margin-bottom: 2rem;
   font-size: 1.8rem;
   letter-spacing: .2rem;
-  line-height: 2rem;
   color: #777; }
 
 .tours__p2 {
   margin-bottom: 2rem;
   font-size: 1.8rem;
   letter-spacing: .2rem;
-  line-height: 2rem;
   color: #777; }
 
-.tours__pic--img1 {
-  height: 20rem;
-  position: absolute;
-  transform: translate(0, 0); }
+.tours__pic {
+  position: relative; }
+  .tours__pic--img1 {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(34, 17, 34, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 2;
+    transition: all .2s;
+    outline-offset: 2rem;
+    left: 0;
+    top: -2rem; }
+    .tours__pic--img1:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5 4rem rgba(34, 17, 34, 0.5);
+      z-index: 5; }
+  .tours__pic--img2 {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(34, 17, 34, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 2;
+    transition: all .2s;
+    outline-offset: 2rem;
+    right: 0;
+    top: 2rem; }
+    .tours__pic--img2:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5 4rem rgba(34, 17, 34, 0.5);
+      z-index: 5; }
+  .tours__pic--img3 {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(34, 17, 34, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 2;
+    transition: all .2s;
+    outline-offset: 2rem;
+    left: 20%;
+    top: 10rem; }
+    .tours__pic--img3:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5 4rem rgba(34, 17, 34, 0.5);
+      z-index: 5; }
 
-.tours__pic--img2 {
-  height: 20rem;
-  position: absolute;
-  transform: translate(70%, 20%); }
-
-.tours__pic--img3 {
-  height: 20rem;
-  position: absolute;
-  transform: translate(30%, 50%); }
+.tours:hover .tours__pic:not(:hover) {
+  transform: scale(0.95); }
 
 .explore-box {
   height: 30rem;
@@ -235,6 +282,84 @@ body {
 .explore-row {
   transform: skewY(8deg); }
 
+.card {
+  height: 52rem;
+  position: relative;
+  perspective: 550px;
+  -moz-perspective: 550px; }
+  .card__side {
+    color: #fff;
+    height: 52rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: .3rem;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(34, 17, 34, 0.15);
+    transition: all .8s; }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(-180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, #ffb988, #ff7730); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+  .card__head {
+    font-size: 2.8rem;
+    line-height: 5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%; }
+    .card__head-span {
+      padding: 1rem 1.5rem;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone; }
+      .card__head-span--1 {
+        background-image: linear-gradient(to right bottom, rgba(255, 185, 136, 0.85), rgba(255, 119, 48, 0.85)); }
+      .card__head-span--2 {
+        background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+      .card__head-span--3 {
+        background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+  .card__pic {
+    background-size: cover;
+    height: 25rem;
+    background-blend-mode: screen;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 100% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); }
+    .card__pic--1 {
+      background-image: url(../../img/nat-5.jpg), linear-gradient(to right bottom, rgba(255, 185, 136, 0.85), rgba(255, 119, 48, 0.85)); }
+    .card__pic--2 {
+      background-image: url(../../img/nat-6.jpg), linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
+    .card__pic--3 {
+      background-image: url(../../img/nat-7.jpg), linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+  .card__det {
+    color: #333;
+    text-align: center; }
+    .card__det ul {
+      list-style: none;
+      padding: 1rem 3rem; }
+    .card__det li {
+      display: block;
+      padding: 1rem; }
+      .card__det li:not(:last-child) {
+        border-bottom: 0.2rem solid #eee; }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -259,7 +384,7 @@ body {
   height: 90vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../../img/hero.jpg);
   clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%);
   background-size: cover;
   position: relative; }
   .header__logobox {
@@ -275,5 +400,8 @@ body {
   box-sizing: border-box; }
 
 html {
-  font-size: 62.25%;
-  font-family: 'Lato' Arial, Helvetica, sans-serif; }
+  font-size: 62.25%; }
+
+body {
+  padding: 3rem;
+  box-sizing: border-box; }
