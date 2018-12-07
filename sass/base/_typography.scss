@@ -39,6 +39,7 @@ body {
 
 .heading-secondary {
     height: auto;
+    padding: 3rem;
     display: inline-block;
     font-size: 3.5rem;
     background-image: linear-gradient(to right, $lightnature, $ultranature);
@@ -60,6 +61,6 @@ body {
 .heading-tertiary {
     font-size: 1.6rem;
     color: $twilight;
-    font-weight: 100;
+    font-weight: 300;
     text-transform: uppercase;
 }

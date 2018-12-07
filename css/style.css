@@ -86,6 +86,7 @@ body {
 
 .heading-secondary {
   height: auto;
+  padding: 3rem;
   display: inline-block;
   font-size: 3.5rem;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
@@ -104,7 +105,7 @@ body {
 .heading-tertiary {
   font-size: 1.6rem;
   color: #777;
-  font-weight: 100;
+  font-weight: 300;
   text-transform: uppercase; }
 
 .u-center-text {
@@ -221,7 +222,6 @@ body {
 .tours__pic {
   position: relative; }
   .tours__pic--img1 {
-
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(34, 17, 34, 0.4);
     border-radius: 2px;
@@ -236,7 +236,6 @@ body {
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5 4rem rgba(34, 17, 34, 0.5);
       z-index: 5; }
-
   .tours__pic--img2 {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(34, 17, 34, 0.4);
@@ -247,13 +246,11 @@ body {
     outline-offset: 2rem;
     right: 0;
     top: 2rem; }
-
     .tours__pic--img2:hover {
       outline: 1.5rem solid #55c57a;
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5 4rem rgba(34, 17, 34, 0.5);
       z-index: 5; }
-
   .tours__pic--img3 {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(34, 17, 34, 0.4);
@@ -264,10 +261,14 @@ body {
     outline-offset: 2rem;
     left: 20%;
     top: 10rem; }
+    .tours__pic--img3:hover {
+      outline: 1.5rem solid #55c57a;
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5 4rem rgba(34, 17, 34, 0.5);
+      z-index: 5; }
 
 .tours:hover .tours__pic:not(:hover) {
   transform: scale(0.95); }
-
 
 .explore-box {
   height: 30rem;
@@ -369,6 +370,19 @@ body {
       padding: 1rem; }
       .card__det li:not(:last-child) {
         border-bottom: 0.2rem solid #eee; }
+  .card__price {
+    text-align: center;
+    font-weight: 300; }
+    .card__price--only {
+      font-size: 2rem;
+      margin-top: 15rem;
+      margin-bottom: 20rem; }
+    .card__price--large {
+      font-size: 6rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {

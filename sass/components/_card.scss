@@ -111,6 +111,25 @@
        
     }
 
+    &__price {
+        text-align: center;
+        font-weight: 300;
+
+        &--only {
+            font-size: 2rem; 
+            margin-top: 15rem;
+            margin-bottom: 20rem;
+        }
+
+        &--large {
+            font-size: 6rem;
+            @include centre;
+        }
+
+        
+    }
+
+
     &:hover &__side {
         &--front {
             transform: rotateY(180deg);
