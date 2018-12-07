@@ -52,7 +52,7 @@ body {
     cursor: default;
     
     &:hover {
-        transform: skewX(-15deg);
+        transform: skewX(10deg) skewY(2deg);
         text-shadow: 0 2rem 3rem rgba($dark, .5);
     }
 }
