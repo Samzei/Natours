@@ -1,0 +1,123 @@
+.card {
+    height: 52rem;
+    position: relative;
+    perspective: 550px;
+    -moz-perspective: 550px;
+
+    &__side {
+        color: $milk;
+        height: 52rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: .3rem;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($dark, .15);
+        transition: all .8s;
+
+        &--front {
+            background-color: $milk;
+        }
+    
+        &--back {
+            transform: rotateY(-180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, $sun, $ragingsun);
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $lightnature, $ultranature);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $sea, $ocean);
+            }
+        }
+    }
+
+    &__head {
+        font-size: 2.8rem;
+        line-height: 5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $milk;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+
+        &-span {
+            padding: 1rem 1.5rem;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+
+            &--1 {
+                background-image: linear-gradient(to right bottom, rgba($sun, .85), rgba($ragingsun, .85));
+            }
+
+            &--2 {
+                background-image: linear-gradient(to right bottom, rgba($lightnature, .85), rgba($ultranature, .85));                
+            }
+
+            &--3 {
+                background-image: linear-gradient(to right bottom, rgba($sea, .85), rgba($ocean, .85));
+            }
+        }
+    }
+
+    &__pic {
+        background-size: cover;
+        height: 25rem;
+        background-blend-mode: screen;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 100% 100%);
+        -webkit-clip-path:  polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+
+        &--1 {
+            background-image: url(../../img/nat-5.jpg), linear-gradient(to right bottom, rgba($sun, .85), rgba($ragingsun, .85));
+        }
+
+        &--2 {
+            background-image: url(../../img/nat-6.jpg), linear-gradient(to right bottom, rgba($lightnature, .85), rgba($ultranature, .85));
+        }
+
+        &--3 {
+            background-image: url(../../img/nat-7.jpg), linear-gradient(to right bottom, rgba($sea, .85), rgba($ocean, .85));
+        }
+    }
+
+    &__det {
+        color: $cold;
+        text-align: center;
+
+        ul {
+            list-style: none;
+            padding: 1rem 3rem;
+        }
+
+        li {
+            display: block;
+            padding: 1rem;
+
+            &:not(:last-child) {
+                border-bottom: .2rem solid $dull;
+            }
+        }
+       
+    }
+
+    &:hover &__side {
+        &--front {
+            transform: rotateY(180deg);
+        }
+
+        &--back {
+            transform: rotateY(0deg);
+        }
+    }
+}
