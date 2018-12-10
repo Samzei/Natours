@@ -54,13 +54,19 @@
             outline: none;
             transform: translateY(-0.3rem);
             box-shadow: 0 1rem 2rem rgba($dark, .2);
+            border-radius: 10rem;
         }
 
-        &active {
+        &:active {
             outline: none;
             transform: translate(0.1rem);
             box-shadow: 0 .5rem 1rem rgba($dark, .2);
         }
+    }
+
+    &--center {
+        display: inline-block;
+        margin: 0 50rem;
     }
 
     &::after{
