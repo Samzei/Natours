@@ -1,0 +1,60 @@
+.footer {
+    background-color: $cold;
+    padding: 15rem 10rem;
+    color: $ash;
+    font-weight: 300;
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10rem;
+        box-sizing: border-box;
+    }
+
+    &__nav {
+        padding-top: 2rem;
+        border-top: .1rem solid $ash;
+    }
+
+    &__paragraph {
+        padding-top: 2rem;
+        border-top: .1rem solid $ash; 
+        width: 80%;
+        float: right;
+    }
+
+    &__item {
+        list-style: none;
+        
+        
+    }
+
+    &__list {
+        display: inline-block;  
+        
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+    }
+
+
+
+    &__link {
+
+        &:link,
+        &:visited {
+          color: $ash;
+          background-color: #333;
+          text-decoration: none;
+          display: inline-block;
+          transition: all .3s;
+        }
+    
+        &:hover,
+        &:active {
+          color: $nature;
+          box-shadow: 0 1rem 2rem rgba($dark, .4);
+          transform: rotate(5deg) scale(1.3);
+        }
+      }
+}
