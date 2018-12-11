@@ -601,7 +601,8 @@ body {
 
 .footer {
   background-color: #333;
-  padding: 15rem 10rem;
+  padding: 10rem 0rem;
+  font-size: 1.4rem;
   color: #f7f7f7;
   font-weight: 300; }
   .footer__img {
@@ -611,18 +612,20 @@ body {
     box-sizing: border-box; }
   .footer__nav {
     padding-top: 2rem;
-    border-top: 0.1rem solid #f7f7f7; }
+    border-top: 0.1rem solid #f7f7f7;
+    display: inline-block; }
   .footer__paragraph {
     padding-top: 2rem;
     border-top: 0.1rem solid #f7f7f7;
     width: 80%;
     float: right; }
   .footer__item {
-    list-style: none; }
+    list-style: none;
+    text-align: center; }
   .footer__list {
     display: inline-block; }
     .footer__list:not(:last-child) {
-      margin-right: 1rem; }
+      margin-right: 3rem; }
   .footer__link:link, .footer__link:visited {
     color: #f7f7f7;
     background-color: #333;
