@@ -1084,10 +1084,7 @@ body {
     transform: rotate(5deg) scale(1.3); }
 
 .navigation {
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  height: 100vh; }
+  z-index: -100; }
   .navigation__input {
     display: none; }
   .navigation__btn {
@@ -1113,14 +1110,13 @@ body {
   .navigation__input:checked ~ .navigation__label .navigation__btn::after {
     transform: scale(100); }
   .navigation__nav {
-    height: 100vh;
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 150;
     opacity: 0;
     width: 0;
+    height: 0;
     transition: all .5s; }
   .navigation__list {
     position: absolute;
@@ -1152,7 +1148,8 @@ body {
     transform: translateX(1rem); }
   .navigation__input:checked ~ .navigation__nav {
     opacity: 1;
-    width: 100%; }
+    width: 100%;
+    height: 100vh; }
   .navigation__icon {
     position: relative;
     margin-top: 3.5rem;

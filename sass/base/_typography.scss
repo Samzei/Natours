@@ -4,6 +4,8 @@ body {
     font-size: $primefont;
     font-weight: 400;
     color: $twilight;
+
+    
 }
 
 .header {
@@ -18,20 +20,32 @@ body {
         &--main {
             animation: moveinleft .6s ease-in-out .30s backwards;
             display: inline-block;
-            font-size: 5.8rem;
+            font-size: 7.5rem;
             width: 100%;
-            letter-spacing: .4rem;
+            letter-spacing: 1.6rem;
             font-weight: 400;
+
+            @include respond(tab-port) {
+                font-size: 10rem;
+                letter-spacing: 1.4rem;
+            }
+
         }
 
         &--sub {
             animation: moveinright .6s ease-in-out .50s backwards;
             display: inline-block;
-            margin-top: 3rem;
-            font-size: 2.2rem;
+            margin-top: 7rem;
+            font-size: 3rem;
             width: 100%;
-            letter-spacing: 1.6rem;
+            letter-spacing: .6rem;
             font-weight: 400;
+
+            @include respond(tab-port) {
+                letter-spacing: .4rem;
+                font-size: 4rem;
+                margin-top: 8rem;
+            }
         }
 
     }

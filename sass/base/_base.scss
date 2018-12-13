@@ -1,5 +1,10 @@
 body {
     margin: 1rem;
+
+    @include respond(tab-land) {
+        margin: 0;
+        width: 116.5%;
+    }
 }
 
 .tours {
