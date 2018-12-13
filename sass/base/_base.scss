@@ -17,8 +17,9 @@ body {
 }
 
 .explore {
-    height: 100%;
+    height: auto;
     width: auto;
+    padding: 20rem 0;
     font-size: $primefont;
     background-image: linear-gradient(to right bottom, rgba($lightnature, .8), rgba($ultranature, .8)), url(../../img/nat-4.jpg);
     background-size: cover;

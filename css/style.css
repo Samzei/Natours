@@ -42,8 +42,9 @@ body {
   background-color: #f7f7f7; }
 
 .explore {
-  height: 100%;
+  height: auto;
   width: auto;
+  padding: 20rem 0;
   font-size: 1.6rem;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../../img/nat-4.jpg);
   background-size: cover;
@@ -327,6 +328,11 @@ body {
   box-sizing: border-box;
   box-shadow: 0 0.5rem 5rem rgba(34, 17, 34, 0.3);
   transition: all .2s; }
+  @media (max-width: 56.25em) {
+    .explore-box {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center; } }
   .explore-box__icon {
     display: inline-block;
     margin-bottom: 2rem;
@@ -347,6 +353,9 @@ body {
   position: relative;
   perspective: 550px;
   -moz-perspective: 550px; }
+  @media (max-width: 56.25em) {
+    .card {
+      width: 100%; } }
   .card__side {
     color: #fff;
     height: 52rem;
@@ -591,6 +600,10 @@ body {
 .row {
   max-width: 114rem;
   margin: 0 auto; }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 100%;
+      margin: 0; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row::after {
@@ -599,6 +612,12 @@ body {
     clear: both; }
   .row [class^="col-"] {
     float: left; }
+    @media (max-width: 75em) {
+      .row [class^="col-"] {
+        width: 100%;
+        font-size: 1.6rem;
+        float: none;
+        margin-bottom: 8rem; } }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
   .row .col-1-of-2 {
@@ -683,6 +702,11 @@ body {
     @media (max-width: 56.25em) {
       .navigation__btn {
         right: 2rem;
+        width: 15rem;
+        height: 15rem; } }
+    @media (max-width: 75em) {
+      .navigation__btn {
+        right: 5rem;
         width: 10rem;
         height: 10rem; } }
     .navigation__btn::after {
@@ -748,12 +772,19 @@ body {
       .navigation__icon {
         margin-top: 4.5rem;
         margin-left: 2rem; } }
+    @media (max-width: 75em) {
+      .navigation__icon {
+        margin-top: 4.5rem;
+        margin-left: 2.2rem; } }
     .navigation__icon, .navigation__icon::after, .navigation__icon::before {
       width: 5rem;
       height: 3px;
       background-color: #333;
       display: inline-block; }
       @media (max-width: 56.25em) {
+        .navigation__icon, .navigation__icon::after, .navigation__icon::before {
+          width: 8rem; } }
+      @media (max-width: 75em) {
         .navigation__icon, .navigation__icon::after, .navigation__icon::before {
           width: 6rem; } }
     .navigation__icon::before, .navigation__icon::after {
@@ -767,21 +798,33 @@ body {
       @media (max-width: 56.25em) {
         .navigation__icon::before {
           top: -1.6rem; } }
+      @media (max-width: 75em) {
+        .navigation__icon::before {
+          top: -1.5rem; } }
     .navigation__icon::after {
       top: .8rem; }
       @media (max-width: 56.25em) {
         .navigation__icon::after {
           top: 1.6rem; } }
+      @media (max-width: 75em) {
+        .navigation__icon::after {
+          top: 1.5rem; } }
   .navigation__btn:hover .navigation__icon::before {
     top: -1rem; }
     @media (max-width: 56.25em) {
       .navigation__btn:hover .navigation__icon::before {
         top: -2.2rem; } }
+    @media (max-width: 75em) {
+      .navigation__btn:hover .navigation__icon::before {
+        top: -1.8rem; } }
   .navigation__btn:hover .navigation__icon::after {
     top: 1rem; }
     @media (max-width: 56.25em) {
       .navigation__btn:hover .navigation__icon::after {
         top: 2.2rem; } }
+    @media (max-width: 75em) {
+      .navigation__btn:hover .navigation__icon::after {
+        top: 1.8rem; } }
   .navigation__input:checked + .navigation__btn .navigation__icon {
     background-color: transparent; }
   .navigation__input:checked + .navigation__btn .navigation__icon::before {

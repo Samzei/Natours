@@ -2,6 +2,11 @@
     max-width: $gridwidth;
     margin: 0 auto;
 
+    @include respond(tab-port) {
+        max-width: 100%;
+        margin: 0;
+    }
+
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
     }
@@ -11,9 +16,17 @@
     [class^="col-"] {
         float: left;
 
+        @include respond(tab-land) {
+            width: 100%;
+            font-size: $primefont;
+            float: none;
+            margin-bottom: $gutter-vertical;
+        }
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
         }
+
+        
     }
 
     .col-1-of-2 {

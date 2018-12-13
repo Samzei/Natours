@@ -4,6 +4,11 @@
     perspective: 550px;
     -moz-perspective: 550px;
 
+    @include respond(tab-port) {
+        width: 100%;
+
+    }
+
     &__side {
         color: $milk;
         height: 52rem;
