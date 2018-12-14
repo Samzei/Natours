@@ -913,6 +913,9 @@ body {
     .navigation__link:link span, .navigation__link:visited span {
       margin-right: 1.5rem;
       display: inline-block; }
+    @media (max-width: 56.25em) {
+      .navigation__link:link, .navigation__link:visited {
+        font-size: 5rem; } }
   .navigation__link:hover, .navigation__link:active {
     background-position: 100%;
     color: #55c57a;

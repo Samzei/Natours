@@ -99,6 +99,10 @@
         display: inline-block;
         }
 
+        @include respond(tab-port) {
+            font-size: 5rem;   
+        }
+
     }
 
     &:hover,
