@@ -63,8 +63,11 @@
     &--green {
         color: $nature;
         border-bottom: .3rem solid $nature !important;
-        margin: 0 20rem !important;
-        margin-top: 5rem !important;
+        @include respond(tab-port) {
+            margin: 0 20rem !important;
+            margin-top: 5rem !important;
+        }
+        
     }
 
     &--center {

@@ -229,9 +229,11 @@ body {
 
 .btn--green {
   color: #55c57a;
-  border-bottom: 0.3rem solid #55c57a !important;
-  margin: 0 20rem !important;
-  margin-top: 5rem !important; }
+  border-bottom: 0.3rem solid #55c57a !important; }
+  @media (max-width: 56.25em) {
+    .btn--green {
+      margin: 0 20rem !important;
+      margin-top: 5rem !important; } }
 
 .btn--center {
   display: block;
