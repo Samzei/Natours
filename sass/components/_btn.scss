@@ -60,16 +60,16 @@
             }
     }
 
-
-
     &--green {
         color: $nature;
-        text-decoration: underline;
+        border-bottom: .3rem solid $nature !important;
+        margin: 0 20rem !important;
+        margin-top: 5rem !important;
     }
 
     &--center {
-        display: inline-block;
-        text-align: center;
+        display: block;
+        margin: 0 45rem !important;
     }
 
     &::after{

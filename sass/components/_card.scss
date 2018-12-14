@@ -5,8 +5,9 @@
     -moz-perspective: 550px;
 
     @include respond(tab-port) {
-        width: 100%;
-
+        margin: 0 20rem;
+        height: 120rem;
+        
     }
 
     &__side {
@@ -21,6 +22,11 @@
         overflow: hidden;
         box-shadow: 0 1.5rem 4rem rgba($dark, .15);
         transition: all .8s;
+
+        @include respond(tab-port) {
+            height: 70rem;
+    
+        }
 
         &--front {
             background-color: $milk;
@@ -40,6 +46,14 @@
             &-3 {
                 background-image: linear-gradient(to right bottom, $sea, $ocean);
             }
+
+            @include respond(tab-port) {
+                transform: rotateY(0deg);
+                height: 120rem;
+                clip-path: polygon(0% 90%, 100% 70%, 100% 100%, 0% 100%);
+                -webkit-clip-path: polygon(0% 58%, 100% 56%, 100% 100%, 0% 100%);
+                
+            }
         }
     }
 
@@ -54,6 +68,15 @@
         top: 12rem;
         right: 2rem;
         width: 75%;
+
+        @include respond(tab-port) {
+            font-size: 5.6rem;
+            font-weight: 700;
+            top: 15rem;
+            right: 4rem;
+            width: 80%;
+    
+        }
 
         &-span {
             padding: 1rem 1.5rem;
@@ -83,6 +106,14 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 100% 100%);
         -webkit-clip-path:  polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 
+        @include respond(tab-port) {
+            height: 33rem;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 100% 100%);
+            -webkit-clip-path:  polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+
         &--1 {
             background-image: url(../../img/nat-5.jpg), linear-gradient(to right bottom, rgba($sun, .85), rgba($ragingsun, .85));
         }
@@ -103,15 +134,22 @@
         ul {
             list-style: none;
             padding: 1rem 3rem;
-        }
+            
 
         li {
             display: block;
             padding: 1rem;
 
+            @include respond(tab-port) {
+                font-size: 3rem;
+                padding: 2.5rem;
+                        
+            }
             &:not(:last-child) {
                 border-bottom: .2rem solid $dull;
             }
+        }
+
         }
        
     }
@@ -124,11 +162,22 @@
             font-size: 2rem; 
             margin-top: 15rem;
             margin-bottom: 20rem;
+
+            @include respond(tab-port) {
+                margin-top: 85rem;
+                margin-bottom: 15rem;
+                font-size: 3.6rem;
+            }
         }
 
         &--large {
             font-size: 6rem;
             @include centre;
+
+            @include respond(tab-port) {
+                font-size: 8rem;
+                top: 80%;
+            }
         }
 
         
@@ -138,6 +187,11 @@
     &:hover &__side {
         &--front {
             transform: rotateY(180deg);
+
+            @include respond(tab-port) {
+                transform: rotateY(0deg);
+        
+            }
         }
 
         &--back {

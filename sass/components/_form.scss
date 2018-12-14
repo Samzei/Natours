@@ -19,6 +19,9 @@
   
       @include respond(tab-port){
           width: 100%;
+          height: 10rem;
+          font-size: 3rem;
+          border-radius: .4rem;
       }
   
       &:focus {
@@ -33,6 +36,7 @@
   
       &::-webkit-input-placeholder {
         color: $twilight;
+        text-transform: uppercase;
       }
   
     }
@@ -45,7 +49,12 @@
       margin-left: 2rem;
       margin-top: .7rem;
       display: block;
+      text-transform: uppercase;
       transition: all .3s;
+
+      @include respond(tab-port) {
+        font-size: 3rem;
+      }
     }
   
     &__input:placeholder-shown + &__label {
@@ -75,6 +84,11 @@
       cursor: pointer;
       position: relative;
       padding-left: 4.5rem;
+
+      @include respond(tab-port) {
+        font-size: 3rem;
+        padding-left: 6rem;
+      }
     }
   
     &__radio-button {
@@ -86,6 +100,11 @@
       position: absolute;
       left: 0;
       top: -.4rem;
+
+    @include respond(tab-port) {
+      height: 4rem;
+      width: 4rem;
+    }
   
       &::after {
         content: "";
@@ -97,6 +116,11 @@
         background-color: $nature;
         opacity: 0;
         transition: opacity .2s;
+
+        @include respond(tab-port) {
+          height: 2rem;
+          width: 2rem;
+        }
       }
     }
   

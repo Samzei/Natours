@@ -41,6 +41,11 @@
             right: .5rem;
             z-index: -100;
             transition: transform 1s;
+
+            @include respond(tab-land) {
+                right: 1rem;
+                top: 1rem;
+            }
         }
     }
         
@@ -113,7 +118,7 @@
     &__icon {
     position: relative;
     margin-top: 3.5rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     z-index: 300;
 
     @include respond(tab-port) {
@@ -154,7 +159,7 @@
     }
 
     &::before {
-        top: -.8rem;
+        top: -1rem;
 
         @include respond(tab-port) {
             top: -1.6rem;
@@ -166,7 +171,7 @@
     }
 
     &::after {
-        top: .8rem;
+        top: 1rem;
 
         @include respond(tab-port) {
             top: 1.6rem;
@@ -180,7 +185,7 @@
     }
 
     &__btn:hover &__icon::before {
-    top: -1rem;
+    top: -1.3rem;
 
     @include respond(tab-port) {
         top: -2.2rem;
@@ -192,7 +197,7 @@
     }
 
     &__btn:hover &__icon::after{
-    top: 1rem;
+    top: 1.3rem;
 
     @include respond(tab-port) {
         top: 2.2rem;

@@ -5,6 +5,10 @@
     color: $ash;
     font-weight: 300;
 
+    @include respond(tab-port) {
+        font-weight: 700;
+    }
+
     &__img {
         display: block;
         margin: 0 auto;
@@ -16,6 +20,12 @@
         padding-top: 2rem;
         border-top: .1rem solid $ash;
         display: inline-block;
+
+        @include respond(tab-port) {
+        font-size: 2.7rem;
+        margin: 0 25rem;
+        float: none;
+        }
     }
 
     &__paragraph {
@@ -23,6 +33,14 @@
         border-top: .1rem solid $ash; 
         width: 80%;
         float: right;
+
+        @include respond(tab-port) {
+            font-size: 3rem;
+            margin: 0 13rem;
+            line-height: 3rem;
+            text-align: center;
+            float: none;
+            }
     }
 
     &__item {
