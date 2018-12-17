@@ -223,6 +223,7 @@ body {
   background-color: #55c57a;
   color: #fff;
   margin-top: 3rem;
+  text-align: center;
   border-radius: 10rem; }
   .btn--greener::after {
     background-color: #55c57a; }
@@ -300,8 +301,10 @@ body {
       line-height: 3rem; } }
 
 .tours__pic {
-  position: relative;
-  margin: 0 20rem; }
+  position: relative; }
+  @media (max-width: 56.25em) {
+    .tours__pic {
+      margin: 0 20rem; } }
   .tours__pic--img1 {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(34, 17, 34, 0.4);
