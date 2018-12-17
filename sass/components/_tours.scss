@@ -27,7 +27,11 @@
 
     &__pic {
         position: relative;
-        margin: 0 20rem;
+        
+
+        @include respond(tab-port) {
+            margin: 0 20rem;
+        }
 
         &--img1 {
             width: 55%;
