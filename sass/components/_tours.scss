@@ -10,6 +10,11 @@
             font-size: 3rem;
             line-height: 3rem;
         }
+
+        @include respond(phone) {
+            margin: 6rem;
+            text-align: center;
+        }
     }
     
     &__p2 {
@@ -23,6 +28,11 @@
             font-size: 3rem;
             line-height: 3rem;
         }
+
+        @include respond(phone) {
+            margin: 6rem;
+            text-align: center;
+        }
     }
 
     &__pic {
@@ -31,6 +41,10 @@
 
         @include respond(tab-port) {
             margin: 0 20rem;
+        }
+
+        @include respond(phone) {
+            margin: 0 10rem;
         }
 
         &--img1 {
@@ -56,6 +70,12 @@
                 border-radius: 5px;
                 top: -.5rem;
                 left: 5rem;
+            }
+
+            @include respond(phone){
+                width: 40%;
+                top: -.2rem;
+                left: 0;
             }
 
         }
@@ -84,6 +104,12 @@
                 top: -.5rem;
                 right: 20rem;
             }
+
+            @include respond(phone) {
+                width: 40%;
+                right: 5rem;
+                top: -.2rem;
+            }
         }
 
         &--img3 {
@@ -110,6 +136,11 @@
                 border-radius: 5px;
                 left: 29%;
                 top: 0rem;
+            }
+
+            @include respond(phone) {
+                width: 40%;
+                left: 25%;
             }
 
         }

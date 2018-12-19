@@ -18,6 +18,10 @@
         line-height: 3rem;
     }
 
+    @include respond(phone) {
+        margin: 0 5rem;
+    }
+
     &__icon {
         display: inline-block;
         margin-bottom: 2rem;

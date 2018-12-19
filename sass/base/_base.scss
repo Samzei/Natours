@@ -21,7 +21,7 @@ body {
     width: auto;
     padding: 20rem 0;
     font-size: $primefont;
-    background-image: linear-gradient(to right bottom, rgba($lightnature, .8), rgba($ultranature, .8)), url(../../img/nat-4.jpg);
+    background-image: linear-gradient(to right bottom, rgba($lightnature, .8), rgba($ultranature, .8)), url(../img/nat-4.jpg);
     background-size: cover;
     padding-top: 15rem;
 
@@ -43,6 +43,10 @@ body {
 .testimonies {
     position: relative;
     padding: 15rem;
+
+    @include respond(phone){
+        padding: 5rem;
+    }
 }
 
 .booker {
@@ -55,7 +59,7 @@ body {
                                     rgba($milk, .9) 0%,
                                     rgba($milk, .9) 50%,
                                     transparent 50%) ,
-                                     url(../../img/nat-10.jpg);
+                                     url(../img/nat-10.jpg);
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($dark, .7);

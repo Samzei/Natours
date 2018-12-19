@@ -82,9 +82,9 @@ body {
 }
 
 .heading-tertiary {
-    font-size: 1.6rem;
+    font-size: $primefont;
     color: $twilight;
-    font-weight: 300;
+    font-weight: 700;
     text-transform: uppercase;
 
     @include respond(tab-port) {

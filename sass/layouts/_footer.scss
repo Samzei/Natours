@@ -6,7 +6,8 @@
     font-weight: 300;
 
     @include respond(tab-port) {
-        font-weight: 700;
+        font-weight: 400;
+        font-size: 1rem;
     }
 
     &__img {
@@ -14,6 +15,11 @@
         margin: 0 auto;
         margin-bottom: 10rem;
         box-sizing: border-box;
+
+        @include respond(phone) {
+            width: 30rem;
+            height: 30rem;
+        }
     }
 
     &__nav {
@@ -23,9 +29,14 @@
 
         @include respond(tab-port) {
         font-size: 2.7rem;
-        margin: 0 25rem;
+        margin: 0 16rem;
         float: none;
         }
+
+        @include respond(phone) {
+            margin: 0 5rem;
+        }
+        
     }
 
     &__paragraph {
@@ -40,7 +51,11 @@
             line-height: 3rem;
             text-align: center;
             float: none;
-            }
+        }
+
+        @include respond(phone) {
+            margin: 0 5rem;
+        }
     }
 
     &__item {
@@ -54,7 +69,13 @@
         
         &:not(:last-child) {
             margin-right: 3rem;
+
+            @include respond(phone) {
+                margin-top: 2rem;
+            }
         }
+
+        
     }
 
 

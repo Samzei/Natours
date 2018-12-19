@@ -63,7 +63,16 @@
 
     &--green {
         color: $nature;
+        padding: 0 0 1rem 0 !important;
         border-bottom: .3rem solid $nature !important;
+        box-sizing: border-box;
+
+        &:hover {
+            background-color: $nature;
+            color: $milk;
+            padding: 2rem !important;
+        }
+
         @include respond(tab-port) {
             margin: 0 20rem !important;
             margin-top: 5rem !important;
@@ -74,6 +83,10 @@
     &--center {
         display: block;
         margin: 0 45rem !important;
+
+        @include respond(phone) {
+            margin: 0 10rem !important;
+        }
     }
 
     &::after{

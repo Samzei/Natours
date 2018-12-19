@@ -55,6 +55,11 @@
             width: 20rem;
             transform: skewX(0);
         }
+
+        @include respond(phone){
+            height: 15rem;
+            width: 15rem;
+        }
         
     }
 
