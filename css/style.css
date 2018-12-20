@@ -242,7 +242,7 @@ body {
     padding: 2rem !important; }
   @media (max-width: 56.25em) {
     .btn--green {
-      margin: 0 20rem !important;
+      margin: 0 15rem !important;
       margin-top: 5rem !important; } }
 
 .btn--center {
@@ -851,8 +851,8 @@ body {
     box-sizing: border-box; }
     @media (max-width: 37.5em) {
       .footer__img {
-        width: 30rem;
-        height: 30rem; } }
+        width: 20rem;
+        height: 20rem; } }
   .footer__nav {
     padding-top: 2rem;
     border-top: 0.1rem solid #f7f7f7;
@@ -957,7 +957,7 @@ body {
     z-index: 150;
     opacity: 0;
     width: 0%;
-    transition: all .5s; }
+    transition: all .4s; }
   .navigation__list {
     position: absolute;
     top: 50%;
