@@ -39,6 +39,16 @@
     }
 }
 
+.explore-col {
+    &-1 {
+        @include respond(tab-port){
+            width: calc((100% - #{$gutter-horizontal}) / 2);
+            float: left;
+            
+        }
+    }
+}
+
 .explore-row {
     transform: skewY(8deg);
 

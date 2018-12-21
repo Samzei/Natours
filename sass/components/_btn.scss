@@ -84,6 +84,10 @@
         display: block;
         margin: 0 45rem !important;
 
+        @include respond(tab-port){
+            margin: 0 20rem !important;
+        }
+
         @include respond(phone) {
             margin: 0 10rem !important;
         }
