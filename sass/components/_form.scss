@@ -102,8 +102,9 @@
       top: -.4rem;
 
     @include respond(tab-port) {
-      height: 4rem;
-      width: 4rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      border: 2px solid $nature;
     }
   
       &::after {
@@ -118,8 +119,9 @@
         transition: opacity .2s;
 
         @include respond(tab-port) {
-          height: 2rem;
-          width: 2rem;
+          height: 1.5rem;
+          width: 1.5rem;
+          top: 49%;
         }
       }
     }
