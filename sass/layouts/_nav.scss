@@ -228,17 +228,17 @@
     }
     }
 
-    &__input:checked + &__btn &__icon {
-    background-color: transparent;
+    &__input:checked + &__button &__icon {
+        background-color: transparent;
     }
 
-    &__input:checked + &__btn &__icon::before {
-    top: 0;
-    transform: rotate(135deg);
+    &__input:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
     }
 
-    &__input:checked + &__btn &__icon::after {
-    top: 0;
-    transform: rotate(-135deg);
+    &__input:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
     }
 }

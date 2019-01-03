@@ -13,12 +13,16 @@
 
 
     @include respond(tab-port) {
-        margin: 0 10rem;
+        height: 40rem;
+        margin: 0 4rem;
         font-size: 3rem;
         line-height: 3rem;
+        padding: 5rem;
+        box-sizing: initial;
     }
 
     @include respond(phone) {
+        height: 30rem;
         margin: 0 5rem;
     }
 
@@ -39,15 +43,6 @@
     }
 }
 
-.explore-col {
-    &-1 {
-        @include respond(tab-port){
-            width: calc((100% - #{$gutter-horizontal}) / 2);
-            float: left;
-            
-        }
-    }
-}
 
 .explore-row {
     transform: skewY(8deg);
