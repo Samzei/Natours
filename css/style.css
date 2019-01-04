@@ -558,14 +558,12 @@ body {
         border-radius: .3rem;
         margin-bottom: 50rem;
         width: 75%;
-        margin-right: auto;
-        margin-left: auto; }
+        margin-left: 11.25rem; }
         .card__side--back {
           transform: rotateY(0deg);
           clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
           position: absolute;
-          top: 85%;
-          left: 12rem; }
+          top: 85%; }
       .card__det {
         font-size: 3rem;
         padding: 2rem;
@@ -582,6 +580,9 @@ body {
         transform: rotateY(0deg); }
         .card:hover .card__side--front--back {
           transform: rotateY(0deg); } }
+  @media (max-width: 37.5em) {
+    .card__side {
+      margin-left: 7.5rem; } }
 
 .video-bg {
   position: absolute;

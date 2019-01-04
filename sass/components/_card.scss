@@ -152,8 +152,7 @@
             border-radius: .3rem;
             margin-bottom: 50rem;
             width: 75%;
-            margin-right: auto;
-            margin-left: auto;
+            margin-left: 11.25rem;
 
             &--back {
                 transform: rotateY( 0deg);
@@ -161,7 +160,6 @@
                 
                 position: absolute;
                 top: 85%;
-                left: 12rem;
                     
             }
         }
@@ -200,6 +198,12 @@
                 transform: rotateY(0deg);
             }
         }
+        }
+    }
+
+    @include respond(phone) {
+        &__side {
+            margin-left: 7.5rem;
         }
     }
 }
