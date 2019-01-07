@@ -45,7 +45,7 @@ body {
     padding: 15rem;
 
     @include respond(phone){
-        padding: 5rem;
+        padding: 1rem;
     }
 }
 
