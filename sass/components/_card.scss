@@ -135,11 +135,11 @@
     &:hover &__side {
         &--front {
             transform: rotateY(180deg);
+        }
  
         &--back {
             transform: rotateY(0deg);
         }
-    }
     }
     
     @include respond(tab-port) {
@@ -193,11 +193,12 @@
         &:hover &__side {
             &--front {
                 transform: rotateY(0deg);
+            }
     
             &--back {
                 transform: rotateY(0deg);
             }
-        }
+        
         }
     }
 

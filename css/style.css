@@ -361,9 +361,9 @@ body {
         left: 5rem; } }
     @media (max-width: 37.5em) {
       .tours__pic--img1 {
-        width: 25%;
+        width: 27%;
         top: -.2rem;
-        left: 10rem; } }
+        left: 5rem; } }
   .tours__pic--img2 {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(34, 17, 34, 0.4);
@@ -387,8 +387,8 @@ body {
         right: 20rem; } }
     @media (max-width: 37.5em) {
       .tours__pic--img2 {
-        width: 25%;
-        right: 15rem;
+        width: 27%;
+        right: 10rem;
         top: -.2rem; } }
   .tours__pic--img3 {
     width: 55%;
@@ -413,8 +413,8 @@ body {
         top: 0rem; } }
     @media (max-width: 37.5em) {
       .tours__pic--img3 {
-        width: 25%;
-        left: 35%; } }
+        width: 27%;
+        left: 32%; } }
 
 .tours:hover .tours__pic:not(:hover) {
   transform: scale(0.95); }
@@ -546,8 +546,8 @@ body {
       transform: translate(-50%, -50%); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
-    .card:hover .card__side--front--back {
-      transform: rotateY(0deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
   @media (max-width: 56.25em) {
     .card {
       height: auto; }
@@ -578,8 +578,8 @@ body {
           font-size: 6.5rem; }
       .card:hover .card__side--front {
         transform: rotateY(0deg); }
-        .card:hover .card__side--front--back {
-          transform: rotateY(0deg); } }
+      .card:hover .card__side--back {
+        transform: rotateY(0deg); } }
   @media (max-width: 37.5em) {
     .card__side {
       margin-left: 7.5rem; } }
