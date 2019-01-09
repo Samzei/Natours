@@ -91,6 +91,9 @@ body {
       .book__form {
         width: 80%;
         margin: 0 auto; } }
+    @media (max-width: 37.5em) {
+      .book__form {
+        width: 100%; } }
 
 body {
   line-height: 1.7rem;
@@ -156,6 +159,11 @@ body {
       padding: 2.5rem;
       letter-spacing: .2rem;
       line-height: 4.5rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 3.5rem;
+      font-weight: 700;
+      padding: 1.5rem; } }
   .heading-secondary:hover {
     transform: skewX(10deg) skewY(2deg);
     text-shadow: 0 2rem 3rem rgba(34, 17, 34, 0.5); }
@@ -442,7 +450,7 @@ body {
   @media (max-width: 37.5em) {
     .explore-box {
       height: 30rem;
-      margin: 0 5rem; } }
+      margin: 0 1rem; } }
   .explore-box__icon {
     display: inline-block;
     margin-bottom: 2rem;
@@ -582,7 +590,8 @@ body {
         transform: rotateY(0deg); } }
   @media (max-width: 37.5em) {
     .card__side {
-      margin-left: 7.5rem; } }
+      width: 95%;
+      margin-left: 2rem; } }
 
 .video-bg {
   position: absolute;
@@ -828,8 +837,8 @@ body {
           margin-right: 0rem; } }
     @media (max-width: 37.5em) {
       .row .cols-1-of-2-t {
-        width: 80% !important;
-        margin: 5rem 5rem;
+        width: 100% !important;
+        margin: 5rem 0rem;
         box-sizing: border-box;
         float: none;
         font-size: 1.6rem; } }
